@@ -341,6 +341,48 @@ input, input:before, input:after {
         border-radius:10px;
     }
     
+    .stats_promo{
+        width: 90%;
+        height: 45px;
+        position: absolute;
+        top: 255px;
+        left: 5%;
+        background: rgba(0, 0, 0, 0.4);
+        border: 1px solid black;
+        border-radius: 10px;
+    }
+    
+    .stats_promo_input_code{
+        width:150px;
+        height:25px;
+        position:absolute;
+        top:7px;
+        left:18px;
+        border:2px solid white;
+        border-radius:5px;
+        text-align:center;
+        background:rgba(255, 255, 255, 0.3);
+        color:white;
+        font-family:airborne;
+        font-size:16px;
+    }
+    
+    .activate_promo{
+        width:30px;
+        height:30px;
+        position:absolute;
+        top:5px;
+        right:10px;
+        border:2px solid white;
+        border-radius:5px;
+        cursor:pointer;
+        transition:1s;
+    }
+    
+    .activate_promo:hover{
+        background:rgba(255, 255, 255, 0.3);
+    }
+    
     .mainMenuButtons{
         width:80%;
         height:300px;
@@ -1399,6 +1441,47 @@ input, input:before, input:after {
       left: 5%;
       background:rgba(0, 0, 0, 0.6);
       border-radius:20px;
+    }
+    
+    .stats_promo{
+        width: 90%;
+        height: 80px;
+        position: relative;
+        top: 255px;
+        left: 5%;
+        background: rgba(0, 0, 0, 0.6);
+        border-radius:20px;
+    }
+    
+    .stats_promo_input_code{
+        width:278px;
+        height:50px;
+        position:absolute;
+        top:10px;
+        left:23px;
+        border:2px solid white;
+        border-radius:5px;
+        text-align:center;
+        background:rgba(255, 255, 255, 0.3);
+        color:white;
+        font-family:airborne;
+        font-size:40px;
+    }
+    
+    .activate_promo{
+        width:60px;
+        height:60px;
+        position:absolute;
+        top:5px;
+        right:30px;
+        border:2px solid white;
+        border-radius:5px;
+        cursor:pointer;
+        transition:1s;
+    }
+    
+    .activate_promo:hover{
+        background:rgba(255, 255, 255, 0.3);
     }
     
     .stats_text{

@@ -166,3 +166,24 @@ function openBookmark(mark){
     document.getElementById("bookmark"+selected).style.background="rgba(0, 0, 0, 0.35)";
     document.getElementById("bookmark"+not_selected).style.background="rgba(0, 0, 0, 0.75)";
 }
+
+
+function activate_code(){
+    let code=document.getElementById('stats_promo_input_code').value;
+    
+    let user_token=get_cookie('token');
+    
+    let xhr=new XMLHttpRequest();
+    let adress="http://escdarkness.ru/app/active_code.php?token="+user_token+"&code="+code;
+    xhr.open('GET', adress, true);
+    xhr.send();
+    xhr.onreadystatechange=function(){
+        if(xhr.readyState==4){
+            if(xhr.responseText!='error'){
+                alert('Успешная активация!');
+            }else{
+                alert('Ошибка!');
+            }
+        }
+    }
+}
